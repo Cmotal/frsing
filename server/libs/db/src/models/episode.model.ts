@@ -11,9 +11,9 @@ import { model } from 'mongoose';
 export class Episode {
     @ApiProperty({description: '分集名'})
     @prop()
-    name:string;
+    title:string;
 
     @ApiProperty({description: '文件'})
     @prop()
-    file: string
+    file: string;
 }
