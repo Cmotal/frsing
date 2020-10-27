@@ -15,11 +15,11 @@ export class CoursesController {
   @Get('option')
   option() {
     return {
-      title: '我是头部标题',
+      title: '课程管理',
       column: [
-        { prop: 'title', label: '标题' },
-        { prop: 'cover', label: '封面图' },
-      ],
-    };
+        { prop: 'title', label: '标题',sortable:true, search:true, regex:true },
+        { prop: 'cover', label: '封面图' }
+      ]
+    }
   }
 }

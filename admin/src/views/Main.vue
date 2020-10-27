@@ -26,9 +26,8 @@
         </el-aside>
         <el-container>
           <el-main >
-            <router-view></router-view>
+            <router-view :key="$route.path"></router-view>
           </el-main>
-          
         </el-container>
       </el-container>
     </el-container>
